@@ -12,6 +12,50 @@ export default function MusicPlayer() {
   const [expanded, setExpanded] = useState(false);
   const [error, setError] = useState(false);
   useEffect(() => { if (audio.current) audio.current.volume = volume; }, [volume]);
+
+  // Try to start music when the page opens. Most mobile browsers block sound
+  // until the visitor interacts with the page. In that case, start it on the
+  // first tap/click/key press anywhere outside the music controls.
+  useEffect(() => {
+    const player = audio.current;
+    if (!player) return;
+    let disposed = false;
+
+    function removeGestureListeners() {
+      document.removeEventListener('pointerdown', onFirstInteraction, true);
+      document.removeEventListener('click', onFirstInteraction, true);
+      document.removeEventListener('keydown', onFirstInteraction, true);
+    }
+
+    function tryStart() {
+      if (player.error || !player.paused) return;
+      const playAttempt = player.play();
+      if (playAttempt && typeof playAttempt.then === 'function') {
+        playAttempt.then(() => {
+          if (!disposed) removeGestureListeners();
+        }).catch(() => {
+          // NotAllowedError is expected before a user gesture on many devices.
+          // Leave the player visible, and try again on the first interaction.
+        });
+      }
+    }
+
+    function onFirstInteraction(event) {
+      // The music controls manage their own play/pause state; don't interfere.
+      if (event.target instanceof Element && event.target.closest('.music-player')) return;
+      tryStart();
+    }
+
+    document.addEventListener('pointerdown', onFirstInteraction, true);
+    document.addEventListener('click', onFirstInteraction, true);
+    document.addEventListener('keydown', onFirstInteraction, true);
+    tryStart();
+
+    return () => {
+      disposed = true;
+      removeGestureListeners();
+    };
+  }, []);
   const toggle = async () => {
     if (!audio.current) return;
     if (playing) { audio.current.pause(); return; }
@@ -20,8 +64,8 @@ export default function MusicPlayer() {
   };
   return (
     <aside className={`music-player ${expanded ? 'music-expanded' : ''}`} aria-label="Music player">
-      <audio ref={audio} src={`${import.meta.env.BASE_URL}audio/our-song.wav`} preload="metadata" loop
-        onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onTimeUpdate={e => setProgress(e.currentTarget.currentTime)}
+      <audio ref={audio} src={`${import.meta.env.BASE_URL}audio/our-song.wav`} preload="auto" autoPlay loop
+        onPlay={() => { setPlaying(true); setError(false); }} onPause={() => setPlaying(false)} onTimeUpdate={e => setProgress(e.currentTarget.currentTime)}
         onLoadedMetadata={e => setDuration(e.currentTarget.duration)} onError={() => setError(true)} />
       <button type="button" className="music-disc" onClick={() => setExpanded(v => !v)} aria-expanded={expanded} aria-label="Expand or collapse music player">
         <Music2 size={18} /><Heart size={9} fill="currentColor" className="absolute top-1 right-1" />
