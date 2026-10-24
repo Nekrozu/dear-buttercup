@@ -1,0 +1,299 @@
+{
+  "memories": [
+    {
+      "id": "funny-collage",
+      "image": "/memories/our-funny-photo-collage.jpg",
+      "title": "<3",
+      "date": "",
+      "caption": "You look beautiful in your own unique way ♡",
+      "alt": "Playful collage of a woman with heart stickers and expressions."
+    },
+    {
+      "id": "laugh",
+      "image": "/memories/your-shy-laugh.jpg",
+      "title": "That shy little smile",
+      "date": "A happy little moment",
+      "caption": "You have such a lovely way of making ordinary things memorable.",
+      "alt": "Woman with clear glasses covering her smiling face in a restaurant."
+    },
+    {
+      "id": "mirror-strip",
+      "image": "/memories/our-mirror-photo-strip.jpg",
+      "title": "Another mirror memory",
+      "date": "A moment to keep",
+      "caption": "Us, a mirror, and another little photograph to save.",
+      "alt": "Two stacked mirror pictures of a couple together."
+    },
+    {
+      "id": "bunny-mirror",
+      "image": "/memories/our-bunny-mirror-photo.jpg",
+      "title": "Our little moment",
+      "date": "One of our little moments",
+      "caption": "The cat somehow made our pictures even cuter.",
+      "alt": "A couple taking a mirror photo with a stuffed bunny."
+    },
+    {
+      "id": "photo-booth",
+      "image": "/memories/our-claw-machine-photo-booth.jpg",
+      "title": "Our little photo booth",
+      "date": "Claw-machine corner",
+      "caption": "Still one of my favourite pictures of us. ♡",
+      "alt": "Two people together in a playful photo-booth strip."
+    },
+    {
+      "id": "cafe-selfie",
+      "image": "/memories/our-close-cafe-selfie.jpg",
+      "title": "Close enough to smile",
+      "date": "Another little outing",
+      "caption": "The photos I love are often the ones we took without a plan.",
+      "alt": "Close selfie of two people sitting together in a cafe."
+    },
+    {
+      "id": "first-hello",
+      "image": "/memories/first-time-meeting-pizza.jpg",
+      "title": "Where it all began",
+      "date": "Our first meeting",
+      "caption": "Even this little handwritten note became part of our story.",
+      "alt": "A handwritten affectionate note resting on a pizza box."
+    },
+    {
+      "id": "first-date",
+      "image": "/memories/our-first-date.jpg",
+      "title": "Our first actual date",
+      "date": "Our first date",
+      "caption": "I keep the simplest moments close to my heart.",
+      "alt": "A woman with glasses sitting in the passenger seat during a date."
+    },
+    {
+      "id": "car-selfie",
+      "image": "/memories/our-car-selfie.jpg",
+      "title": "Just you and me",
+      "date": "An ordinary day together",
+      "caption": "Some of the best memories are simply sitting beside you.",
+      "alt": "A couple smiling together inside a car."
+    },
+    {
+      "id": "tiny-photo",
+      "image": "/memories/a-picture-of-you-in-my-hands.jpg",
+      "title": "A picture within a picture",
+      "date": "Just for the memory box",
+      "caption": "That smile is one of the things I never want to forget.",
+      "alt": "Woman smiling in a car while a small printed portrait is held up."
+    },
+    {
+      "id": "first-flowers-lilac",
+      "image": "/memories/our-first-flowers-lilac.jpg",
+      "title": "The first flowers, part one",
+      "date": "Our first flowers",
+      "caption": "A bouquet for you, and a moment I wanted to keep.",
+      "alt": "Bouquet of delicate lilac, pink, and white flowers in white wrapping."
+    },
+    {
+      "id": "first-flowers-roses",
+      "image": "/memories/our-first-flowers-roses.jpg",
+      "title": "The first flowers, part two",
+      "date": "Our first flowers",
+      "caption": "A handful of roses, with a whole lot of love.",
+      "alt": "Bouquet of red roses wrapped in pale pink paper."
+    },
+    {
+      "id": "bunny",
+      "image": "/memories/the-claw-machine-bunny.jpg",
+      "title": "The little bunny",
+      "date": "Won on the first try",
+      "caption": "Some prizes are especially sweet when they turn into memories.",
+      "alt": "Plush rabbit with a carrot, won from a claw machine."
+    },
+    {
+      "id": "bunny-flowers",
+      "image": "/memories/flowers-and-bunny.jpg",
+      "title": "Flowers and a fluffy friend",
+      "date": "A sweet little surprise",
+      "caption": "A tiny fluffy witness to a moment full of flowers.",
+      "alt": "A bouquet of flowers and a cuddly bunny toy held inside a car."
+    },
+    {
+      "id": "silly-filter",
+      "image": "/memories/your-funniest-filter.jpg",
+      "title": "1st Try",
+      "date": "27th Match 2025",
+      "caption": "I hope there will always be room for moments this cool.",
+      "alt": "Close-up selfie with an exaggerated big-eyes face filter."
+    },
+    {
+      "id": "drive",
+      "image": "/memories/a-drive-together.jpg",
+      "title": "Along for the ride",
+      "date": "A little drive together",
+      "caption": "I love having photographs of the days we spent side by side.",
+      "alt": "A couple sitting together inside a car with a blue sky outside."
+    },
+    {
+      "id": "close-up",
+      "image": "/memories/a-close-up-together.jpg",
+      "title": "A little closer",
+      "date": "Just us",
+      "caption": "The kind of casual picture that means a lot to me.",
+      "alt": "Close selfie of two people smiling under a covered roof."
+    },
+    {
+      "id": "our-note",
+      "image": "/memories/our-little-handwritten-note.jpg",
+      "title": "handwritten note",
+      "date": "A little bit of us",
+      "caption": "A few words scribbled on paper, and something worth keeping.",
+      "alt": "A handwritten note reading I love you in a stationery shop."
+    },
+    {
+      "id": "daydream",
+      "image": "/memories/coffee-and-daydreams.jpg",
+      "title": "A quiet little moment",
+      "date": "One of those ordinary days",
+      "caption": "Even the quiet moments deserve a page in our book.",
+      "alt": "Portrait of a woman resting her head on her hand at a table."
+    },
+    {
+      "id": "blue-outfit",
+      "image": "/memories/your-blue-outfit.jpg",
+      "title": "The silly face filter",
+      "date": "A funny little memory",
+      "caption": "Not every memory has to be serious to be precious.",
+      "alt": "Woman taking a mirror selfie wearing a teal-blue outfit and headscarf."
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "date": "Our first meeting",
+      "title": "The first hello",
+      "description": "That first meeting made its way into our memory box — even the little pizza note.",
+      "memoryId": "first-hello",
+      "image": "/memories/first-time-meeting-pizza.jpg"
+    },
+    {
+      "id": "t2",
+      "date": "Our first date",
+      "title": "One of our earliest chapters",
+      "description": "A photo from our first actual date, kept right here where it belongs.",
+      "memoryId": "first-date",
+      "image": "/memories/our-first-date.jpg"
+    },
+    {
+      "id": "t3",
+      "date": "The first flowers",
+      "title": "A bouquet to remember",
+      "description": "Our very first flowers, in two little photographs I wanted to save.",
+      "memoryId": "first-flowers-lilac",
+      "image": "/memories/our-first-flowers-lilac.jpg"
+    },
+    {
+      "id": "t4",
+      "date": "Claw-machine day",
+      "title": "A tiny bunny and a big smile",
+      "description": "A little rabbit won on the first try — and some photo-booth pictures to remember the day.",
+      "memoryId": "photo-booth",
+      "image": "/memories/your-funniest-filter.jpg"
+    },
+    {
+      "id": "t5",
+      "date": "25 October 2026",
+      "title": "Happy 21st, Buttercup",
+      "description": "Today is for celebrating you, Que. Thank you for every chapter we have shared.",
+      "memoryId": "car-selfie",
+      "image": "/memories/your-blue-outfit.jpg"
+    }
+  ],
+  "littleThings": [
+    {
+      "id": "a",
+      "front": "Your smile",
+      "back": "The one that makes a room feel a little warmer."
+    },
+    {
+      "id": "b",
+      "front": "Your laugh",
+      "back": "The sound that can make an ordinary moment feel golden."
+    },
+    {
+      "id": "c",
+      "front": "Your expressions",
+      "back": "All your little reactions and the way you are unmistakably you."
+    },
+    {
+      "id": "d",
+      "front": "Your heart",
+      "back": "I love the person you are, not just the happiness you bring me."
+    },
+    {
+      "id": "e",
+      "front": "Our silly moments",
+      "back": "The small, ridiculous things that only we would understand."
+    },
+    {
+      "id": "f",
+      "front": "The way you care",
+      "back": "The thoughtful things you do, even when you think no one notices."
+    },
+    {
+      "id": "g",
+      "front": "Being beside you",
+      "back": "Even a normal day can be something I remember fondly."
+    },
+    {
+      "id": "h",
+      "front": "Just being youself",
+      "back": "You don’t have to be anything other than yourself to be special to me."
+    }
+  ],
+  "notes": [
+    {
+      "id": "n1",
+      "text": "I love the way the tiniest memories become the biggest feelings."
+    },
+    {
+      "id": "n2",
+      "text": "You deserve to be celebrated for exactly who you are."
+    },
+    {
+      "id": "n3",
+      "text": "I hope we find more reasons to laugh, even on the ordinary days."
+    },
+    {
+      "id": "n4",
+      "text": "More listening. More gentleness. More understanding."
+    }
+  ],
+  "surprises": [
+    {
+      "id": "s1",
+      "icon": "✿",
+      "title": "a tiny reminder",
+      "message": "I hope you never forget that you matter, and your feelings matter too."
+    },
+    {
+      "id": "s2",
+      "icon": "✧",
+      "title": "a birthday wish",
+      "message": "May 21 be filled with new experiences, good surprises, and moments you can be proud of."
+    },
+    {
+      "id": "s3",
+      "icon": "♡",
+      "title": "one little promise",
+      "message": "I want to listen better and show care through my actions, not just my words."
+    },
+    {
+      "id": "s4",
+      "icon": "☼",
+      "title": "for a rainy day",
+      "message": "You are allowed to take things at your own pace. I respect that."
+    },
+    {
+      "id": "s5",
+      "icon": "✉",
+      "title": "from my heart",
+      "message": "Thank you for the time, trust, laughter, and memories we have shared."
+    }
+  ],
+  "letter": "Dear Que,\n\nHappy 21st birthday, my sweet Buttercup. ♡\n\nI made this little scrapbook because I wanted you to have something that feels like a soft place to land, a collection of the beautiful little things that remind me of you.\n\nI also don't want to pretend that everything between us has been easy. We've been fighting for more than a month, and I know a website can't undo hurt feelings or make everything okay. I'm sorry for the ways I've hurt you, for the moments I haven't listened well enough, and for the times our conversations have felt heavier than they should.\n\nYou deserve to be heard, respected, and loved with patience. I want to do better at that, and I know it takes real actions, not just pretty words. This gift isn't me asking you to forget what happened or to forgive me on a deadline. Please take all the space and time you need.\n\nBut today is your birthday, and above everything else, I want you to feel celebrated. I hope your twenty-first year is filled with peace, laughter, and every little thing that makes you happy.\n\nThank you for being part of my life, Haziqah.\n\nWith love,\nLuqman Hakimi ♡"
+}
