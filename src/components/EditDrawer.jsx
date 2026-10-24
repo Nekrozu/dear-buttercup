@@ -27,6 +27,16 @@ export default function EditDrawer({ opened, onClose, gift, updateGift, addPhoto
   const setItem = (collection, index, field, value) => updateGift(prev => ({
     ...prev, [collection]: prev[collection].map((item, i) => i === index ? { ...item, [field]: value } : item),
   }));
+  // A chapter can display either a scrapbook photo (memoryId) or its own image path.
+  // Clearing the linked photo is essential: otherwise Story.jsx always displays
+  // the linked memory image and ignores edits to the chapter's image field.
+  const setTimelineImagePath = (index, image) => updateGift(prev => ({
+    ...prev,
+    timeline: prev.timeline.map((item, i) => i === index
+      ? { ...item, image, memoryId: '' }
+      : item),
+  }));
+
   const move = (collection, index, direction) => updateGift(prev => {
     const reordered = [...prev[collection]];
     const otherIndex = index + direction;
@@ -89,18 +99,26 @@ export default function EditDrawer({ opened, onClose, gift, updateGift, addPhoto
               </div>)}
             </>}
             {tab === 'story' && <>
-              <p className="edit-info">These chapters use the photos you shared. You can add exact dates and more details here.</p>
+              <p className="edit-info">Personalize the timeline chapters. Choose any scrapbook photo or enter an image path below; you'll see a preview of your choice right away.</p>
               {gift.timeline.map((t, i) => <div key={t.id} className="edit-fields">
                 <label>Chapter {i + 1} · date<input value={t.date} onChange={e => setItem('timeline', i, 'date', e.target.value)} /></label>
                 <label>Title<input value={t.title} onChange={e => setItem('timeline', i, 'title', e.target.value)} /></label>
                 <label>Your story<textarea rows="3" value={t.description} onChange={e => setItem('timeline', i, 'description', e.target.value)} /></label>
                 <label>Choose a photo from your scrapbook
                   <select className="edit-select" value={t.memoryId || ''} onChange={e => setItem('timeline', i, 'memoryId', e.target.value)}>
-                    <option value="">Use chapter's original artwork</option>
+                    <option value="">Use image path below</option>
                     {gift.memories.map(m => <option key={m.id} value={m.id}>{m.title || 'A memory'}</option>)}
                   </select>
                 </label>
-                <label>Image path (optional)<input value={t.image} onChange={e => setItem('timeline', i, 'image', e.target.value)} /></label>
+                <label>Image path (optional)
+                  <input value={t.image || ''} placeholder="/memories/our-first-date.jpg"
+                    onChange={e => setTimelineImagePath(i, e.target.value)} />
+                </label>
+                <p className="text-xs text-faded leading-relaxed">Changing the image path automatically unlinks the scrapbook photo, so the new image appears in the timeline.</p>
+                <div className="flex items-center gap-3 mt-2">
+                  <img className="h-24 w-24 object-cover rounded-lg shadow-sm" src={assetUrl(gift.memories.find(m => m.id === t.memoryId)?.image || t.image)} alt={`Preview for ${t.title}`} />
+                  <p className="text-xs text-faded">Current timeline photo preview</p>
+                </div>
               </div>)}
             </>}
           </div>
