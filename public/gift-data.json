@@ -191,7 +191,7 @@
       "date": "Claw-machine day",
       "title": "A tiny bunny and a big smile",
       "description": "A little rabbit won on the first try — and some photo-booth pictures to remember the day.",
-      "memoryId": "photo-booth",
+      "memoryId": "bunny",
       "image": "/memories/your-funniest-filter.jpg"
     },
     {
@@ -199,7 +199,7 @@
       "date": "25 October 2026",
       "title": "Happy 21st, Buttercup",
       "description": "Today is for celebrating you, Que. Thank you for every chapter we have shared.",
-      "memoryId": "car-selfie",
+      "memoryId": "cafe-selfie",
       "image": "/memories/your-blue-outfit.jpg"
     }
   ],
