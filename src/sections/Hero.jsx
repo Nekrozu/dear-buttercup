@@ -37,7 +37,7 @@ export default function Hero({ memories, openLetter }) {
               <p className="text-sm text-faded">Made with care, and so much love.</p></div>
           </div>
         </Reveal>
-        <div className="hero-art" aria-label="Decorative scrapbook of illustrated sample memories">
+        <div className="hero-art" aria-label="Decorative scrapbook of our real photos">
           <span className="floating-label floating-label-top">a tiny book of us <span>♡</span></span>
           <motion.div className="hero-photo-back" initial={{ rotate: -8, y: 50, opacity: 0 }}
             animate={{ rotate: -9, y: 0, opacity: 1 }} transition={{ delay: .25, duration: .9 }}>

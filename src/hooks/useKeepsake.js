@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { initialGift } from '../data/content';
 
-const STORAGE_KEY = 'buttercup-que-keepsake-v2';
+const STORAGE_KEY = 'buttercup-que-keepsake-v3-real-photos';
 const cloneDefault = () => JSON.parse(JSON.stringify(initialGift));
 
 function validGift(data) {

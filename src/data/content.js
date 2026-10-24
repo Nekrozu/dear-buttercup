@@ -1,8 +1,8 @@
 /**
  * THE ONE PLACE TO PERSONALIZE YOUR GIFT.
- * Replace the sample art with photos in /public/memories, edit the text below,
+ * All 20 real photos are now included in /public/memories. Edit text below,
  * or use the scrapbook's Edit button and Export gift-data.json.
- * None of the example timeline dates or captions claim to describe your real history.
+ * Only the event labels provided with the photos are used; exact dates are not invented.
  */
 export const site = {
   herName: 'Haziqah',
@@ -24,64 +24,193 @@ export const site = {
 
 export const sampleMemories = [
   {
-    id: 'flower', image: '/memories/buttercup-garden.svg',
-    title: 'A little sunshine', date: 'A place for our day',
-    caption: 'Some people make even the simplest days feel warm.',
-    alt: 'Watercolor illustration of buttercup flowers; sample artwork to replace with a real photo',
+    id: "photo-booth",
+    image: "/memories/our-claw-machine-photo-booth.jpg",
+    title: "Our little photo booth",
+    date: "Claw-machine corner",
+    caption: "Still one of my favourite pictures of us. ♡",
+    alt: "Two people together in a playful photo-booth strip."
   },
   {
-    id: 'sky', image: '/memories/pink-sky.svg',
-    title: 'The softest skies', date: 'A moment to remember',
-    caption: 'The kind of little moment I wish I could put in my pocket.',
-    alt: 'Illustrated pink clouds and gentle evening sky; sample artwork',
+    id: "car-selfie",
+    image: "/memories/our-car-selfie.jpg",
+    title: "Just you and me",
+    date: "An ordinary day together",
+    caption: "Some of the best memories are simply sitting beside you.",
+    alt: "A couple smiling together inside a car."
   },
   {
-    id: 'coffee', image: '/memories/little-cafe.svg',
-    title: 'Ordinary magic', date: 'Our ordinary days',
-    caption: 'It was never about doing something grand. It was about being together.',
-    alt: 'Cozy illustration of two cups by a window; sample artwork',
+    id: "first-hello",
+    image: "/memories/first-time-meeting-pizza.jpg",
+    title: "Where it all began",
+    date: "Our first meeting",
+    caption: "Even this little handwritten note became part of our story.",
+    alt: "A handwritten affectionate note resting on a pizza box."
   },
   {
-    id: 'stars', image: '/memories/moonlight.svg',
-    title: 'Under the same sky', date: 'The quiet evenings',
-    caption: 'A gentle reminder of all the beautiful things still out there.',
-    alt: 'Dreamy illustration of moon and stars; sample artwork',
+    id: "first-date",
+    image: "/memories/our-first-date.jpg",
+    title: "Our first actual date",
+    date: "Our first date",
+    caption: "I keep the simplest moments close to my heart.",
+    alt: "A woman with glasses sitting in the passenger seat during a date."
   },
   {
-    id: 'garden', image: '/memories/flower-letter.svg',
-    title: 'A note to keep', date: 'Little reminders',
-    caption: 'I hope you always know how much the little things mean.',
-    alt: 'Illustration of a flower pressed into a paper love letter; sample artwork',
+    id: "first-flowers-lilac",
+    image: "/memories/our-first-flowers-lilac.jpg",
+    title: "The first flowers, part one",
+    date: "Our first flowers",
+    caption: "A bouquet for you, and a moment I wanted to keep.",
+    alt: "Bouquet of delicate lilac, pink, and white flowers in white wrapping."
   },
   {
-    id: 'sunset', image: '/memories/sunset-field.svg',
-    title: 'A softer tomorrow', date: 'For the days ahead',
-    caption: 'Here’s to more laughter, more patience, and more gentle days.',
-    alt: 'Illustration of golden sunset and wildflowers; sample artwork',
+    id: "first-flowers-roses",
+    image: "/memories/our-first-flowers-roses.jpg",
+    title: "The first flowers, part two",
+    date: "Our first flowers",
+    caption: "A handful of roses, with a whole lot of love.",
+    alt: "Bouquet of red roses wrapped in pale pink paper."
   },
+  {
+    id: "bunny",
+    image: "/memories/the-claw-machine-bunny.jpg",
+    title: "The little bunny",
+    date: "Won on the first try",
+    caption: "Some prizes are especially sweet when they turn into memories.",
+    alt: "Plush rabbit with a carrot, won from a claw machine."
+  },
+  {
+    id: "bunny-flowers",
+    image: "/memories/flowers-and-bunny.jpg",
+    title: "Flowers and a fluffy friend",
+    date: "A sweet little surprise",
+    caption: "A tiny fluffy witness to a moment full of flowers.",
+    alt: "A bouquet of flowers and a cuddly bunny toy held inside a car."
+  },
+  {
+    id: "bunny-mirror",
+    image: "/memories/our-bunny-mirror-photo.jpg",
+    title: "Our little mirror moment",
+    date: "One of our little moments",
+    caption: "The bunny somehow made our pictures even cuter.",
+    alt: "A couple taking a mirror photo with a stuffed bunny."
+  },
+  {
+    id: "mirror-strip",
+    image: "/memories/our-mirror-photo-strip.jpg",
+    title: "Another mirror memory",
+    date: "A moment to keep",
+    caption: "Us, a mirror, and another little photograph to save.",
+    alt: "Two stacked mirror pictures of a couple together."
+  },
+  {
+    id: "tiny-photo",
+    image: "/memories/a-picture-of-you-in-my-hands.jpg",
+    title: "A picture within a picture",
+    date: "Just for the memory box",
+    caption: "That smile is one of the things I never want to forget.",
+    alt: "Woman smiling in a car while a small printed portrait is held up."
+  },
+  {
+    id: "drive",
+    image: "/memories/a-drive-together.jpg",
+    title: "Along for the ride",
+    date: "A little drive together",
+    caption: "I love having photographs of the days we spent side by side.",
+    alt: "A couple sitting together inside a car with a blue sky outside."
+  },
+  {
+    id: "close-up",
+    image: "/memories/a-close-up-together.jpg",
+    title: "A little closer",
+    date: "Just us",
+    caption: "The kind of casual picture that means a lot to me.",
+    alt: "Close selfie of two people smiling under a covered roof."
+  },
+  {
+    id: "laugh",
+    image: "/memories/your-shy-laugh.jpg",
+    title: "That shy little smile",
+    date: "A happy little moment",
+    caption: "You have such a lovely way of making ordinary things memorable.",
+    alt: "Woman with clear glasses covering her smiling face in a restaurant."
+  },
+  {
+    id: "our-note",
+    image: "/memories/our-little-handwritten-note.jpg",
+    title: "Our handwritten note",
+    date: "A little bit of us",
+    caption: "A few words scribbled on paper, and something worth keeping.",
+    alt: "A handwritten note reading I love you in a stationery shop."
+  },
+  {
+    id: "funny-collage",
+    image: "/memories/our-funny-photo-collage.jpg",
+    title: "Our silly side",
+    date: "A funny little memory",
+    caption: "Not every memory has to be serious to be precious.",
+    alt: "Playful collage of a woman with heart stickers and expressions."
+  },
+  {
+    id: "daydream",
+    image: "/memories/coffee-and-daydreams.jpg",
+    title: "A quiet little moment",
+    date: "One of those ordinary days",
+    caption: "Even the quiet moments deserve a page in our book.",
+    alt: "Portrait of a woman resting her head on her hand at a table."
+  },
+  {
+    id: "cafe-selfie",
+    image: "/memories/our-close-cafe-selfie.jpg",
+    title: "Close enough to smile",
+    date: "Another little outing",
+    caption: "The photos I love are often the ones we took without a plan.",
+    alt: "Close selfie of two people sitting together in a cafe."
+  },
+  {
+    id: "blue-outfit",
+    image: "/memories/your-blue-outfit.jpg",
+    title: "Looking so lovely",
+    date: "A special look",
+    caption: "You look beautiful in your own unique way, Que. ♡",
+    alt: "Woman taking a mirror selfie wearing a teal-blue outfit and headscarf."
+  },
+  {
+    id: "silly-filter",
+    image: "/memories/your-funniest-filter.jpg",
+    title: "The silly face filter",
+    date: "One of our silly memories",
+    caption: "I hope there will always be room for moments this funny.",
+    alt: "Close-up selfie with an exaggerated big-eyes face filter."
+  }
 ];
 
 export const sampleTimeline = [
   {
-    id: 't1', date: 'Chapter one', title: 'Somehow, we found each other',
-    description: 'Every story starts somewhere. Add the real place or moment that yours began.',
-    image: '/memories/pink-sky.svg',
+    id: "t1", date: "Our first meeting", title: "The first hello",
+    description: "That first meeting made its way into our memory box — even the little pizza note.", memoryId: "first-hello",
+    image: "/memories/first-time-meeting-pizza.jpg"
   },
   {
-    id: 't2', date: 'A little later', title: 'The conversations that stayed',
-    description: 'The little chats and inside jokes that slowly became something more.',
-    image: '/memories/little-cafe.svg',
+    id: "t2", date: "Our first date", title: "One of our earliest chapters",
+    description: "A photo from our first actual date, kept right here where it belongs.", memoryId: "first-date",
+    image: "/memories/our-first-date.jpg"
   },
   {
-    id: 't3', date: 'One of our days', title: 'A memory to hold onto',
-    description: 'Put your first favourite shared photo or date right here.',
-    image: '/memories/buttercup-garden.svg',
+    id: "t3", date: "The first flowers", title: "A bouquet to remember",
+    description: "Our very first flowers, in two little photographs I wanted to save.", memoryId: "first-flowers-lilac",
+    image: "/memories/our-first-flowers-lilac.jpg"
   },
   {
-    id: 't4', date: 'Today · 25 October 2026', title: 'Twenty-one looks lovely on you',
-    description: 'Another year of your beautiful life. You deserve to feel celebrated today, Que.',
-    image: '/memories/flower-letter.svg',
+    id: "t4", date: "Claw-machine day", title: "A tiny bunny and a big smile",
+    description: "A little rabbit won on the first try — and some photo-booth pictures to remember the day.", memoryId: "photo-booth",
+    image: "/memories/our-claw-machine-photo-booth.jpg"
   },
+  {
+    id: "t5", date: "25 October 2026", title: "Happy 21st, Buttercup",
+    description: "Today is for celebrating you, Que. Thank you for every chapter we have shared.", memoryId: "car-selfie",
+    image: "/memories/our-car-selfie.jpg"
+  }
 ];
 
 export const sampleLittleThings = [

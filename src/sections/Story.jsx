@@ -7,7 +7,7 @@ export default function Story({ timeline, memories = [] }) {
     <section id="story" className="story-section section-padding">
       <div className="site-container">
         <Reveal><SectionHeader kicker="chapter iii · how we got here" title={<>Every story begins <em>somewhere.</em></>}
-          sub="Our chapters, one by one. The first entries are gentle examples — replace them with your real moments." /></Reveal>
+          sub="A few of our real little chapters, captured in photos. There are still so many pages left to write." /></Reveal>
         <div className="story-timeline max-w-[970px] mx-auto">
           {timeline.map((item, index) => (
             <Reveal key={item.id} className={`timeline-entry ${index % 2 ? 'timeline-right' : 'timeline-left'}`}>

@@ -89,7 +89,7 @@ export default function EditDrawer({ opened, onClose, gift, updateGift, addPhoto
               </div>)}
             </>}
             {tab === 'story' && <>
-              <p className="edit-info">Sample chapters aren't your actual relationship timeline. Add your real dates and details here.</p>
+              <p className="edit-info">These chapters use the photos you shared. You can add exact dates and more details here.</p>
               {gift.timeline.map((t, i) => <div key={t.id} className="edit-fields">
                 <label>Chapter {i + 1} · date<input value={t.date} onChange={e => setItem('timeline', i, 'date', e.target.value)} /></label>
                 <label>Title<input value={t.title} onChange={e => setItem('timeline', i, 'title', e.target.value)} /></label>
@@ -108,7 +108,7 @@ export default function EditDrawer({ opened, onClose, gift, updateGift, addPhoto
             <button type="button" className="primary-button w-full justify-center" onClick={exportGift}><Download size={17}/> Export gift-data.json</button>
             <p className="text-[11px] text-faded leading-relaxed mt-2">To make your changes visible to Que on a published site: download the JSON, put it in the project's <code>public/</code> folder, then rebuild and publish. Browser edits alone are private to this device.</p>
             <button type="button" className="text-xs text-faded underline mt-3 inline-flex gap-2 items-center hover:text-rose"
-              onClick={() => { if (window.confirm('Replace all your edits with the original sample scrapbook? Export a backup first.')) resetGift(); }}><RotateCcw size={13}/> Restore original sample</button>
+              onClick={() => { if (window.confirm('Restore the original gift with all 20 photos? Export a backup of your edits first.')) resetGift(); }}><RotateCcw size={13}/> Restore original photos</button>
           </div>
         </motion.div>
       </motion.div>}

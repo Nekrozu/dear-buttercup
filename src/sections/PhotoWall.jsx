@@ -8,7 +8,7 @@ export default function PhotoWall({ memories, openPhoto, addPhotos }) {
     <section id="photo-wall" className="section-padding photo-wall-section overflow-hidden">
       <div className="site-container">
         <Reveal><SectionHeader kicker="chapter ii · the scattered pages" title={<>Photos, little notes, <em>and us.</em></>}
-          sub="Just like a real scrapbook — a little messy, a little crooked, and full of heart." /></Reveal>
+          sub={`${memories.length} photos from our little world — a little messy, a little crooked, and full of heart.`} /></Reveal>
         <div className="scrapbook-collage">
           {memories.map((m, i) => (
             <Reveal className={`wall-slot wall-slot-${i % 6}`} key={m.id} delay={i % 3 * .07}>
